@@ -1,6 +1,13 @@
-body {
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+* {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+
+}
+
+body {
     font-family: Roboto,
         Arial,
         sans-serif;
@@ -12,7 +19,7 @@ body {
     background-color: #2874f0;
     width: 100%;
     height: 56px;
-    position: fixed;
+    /* position: fixed; */
 }
 
 #headerBlock article {
@@ -79,7 +86,7 @@ body {
 
 /* search css starts here */
 .search input {
-    width: 81%;
+    width: 75%;
     box-sizing: border-box;
     height: 35px;
     border-radius: 2px;
@@ -93,4 +100,504 @@ body {
     font-weight: 500;
 }
 
+.search-icon-block {
+    position: relative;
+}
+
+.fa-search {
+    position: absolute;
+    left: -31px;
+    top: 3px;
+    color: #2874f0;
+    font-size: 17px;
+}
+
 /* search css ends here */
+
+/*------------right menu css starts here ---*/
+.rightHeader nav>ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.rightHeader nav>ul>li>a {
+    padding: 26px 15px 18px 33px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.rightHeader nav ul>li:nth-child(1) a.first-child {
+    background: #fff;
+    color: #2874f0;
+    padding: 6px 40px;
+    border-radius: 1px;
+    box-shadow: 0px 0px 1px 0px #11111140;
+}
+
+.rightHeader svg {
+    transform: rotate(270deg);
+    margin: 0px 4px;
+}
+
+/*-----flipkart dropdown menu -----------*/
+.first-child {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    width: 260px;
+    margin: 7px 0;
+    left: -76px;
+    z-index: 1;
+}
+.menu_Block{
+    left: 1020px !important;
+}
+
+.dropdown .nav-item .nav-link {
+    padding: 10px 20px !important;
+
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: #444;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    transition: all .5s ease;
+}
+
+.customer_links {
+    display: flex;
+}
+
+.customer_links span {
+    flex: 1;
+}
+
+.customer_links span a.customer {
+    color: #111;
+
+}
+
+.customer_links span a.signup {
+    color: #2874f0;
+    text-align: right;
+
+}
+
+ul>li:hover ul {
+    display: flex;
+}
+
+.dropdown li {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-right: 11px solid transparent;
+    border-left: 11px solid transparent;
+    border-bottom: 11px solid #fff;
+    position: relative;
+    margin: auto;
+}
+
+.dropdownMenu {
+    display: flex;
+    align-items: center;
+}
+
+.dropdownMenu span {
+    margin: 0px 15px;
+}
+
+.dropdownMenu span i {
+    color: #2874f0;
+}
+
+span.plus_icon img {
+    width: 14px;
+    filter: invert(1);
+}
+
+.customer_links span a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*-------right menu css ends here ----*/
+
+/*------main menu block css starts here -----*/
+#mainMenuBlock {
+    background-color: #fff;
+    height: 40px;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+#mainMenuBlock article {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+#mainMenuBlock ul {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#mainMenuBlock ul li {
+    flex: 1 auto;
+}
+
+#mainMenuBlock ul li a {
+    text-decoration: none;
+    color: #212121;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 0;
+}
+
+#mainMenuBlock ul li a:hover {
+    color: #2874f0;
+}
+
+#mainMenuBlock ul li a svg {
+    margin-left: 6px;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+#mainMenuBlock ul li a svg path {
+    fill: #878787 !important;
+    opacity: 0.5;
+}
+
+
+/*----dropdown mega menu starts here ----*/
+#MegaDropDownMenuBlock {
+    background: #fff;
+    height: 75%;
+    width: 1220px;
+    box-shadow: 0px 2px 3px 0px #ccc;
+    margin: 10px 0px;
+    position: absolute;
+    left: 135px;
+    display: none;
+    z-index: 9999;
+}
+
+#MegaDropDownMenuBlock div {
+    flex-basis: 25%;
+    padding: 20px;
+}
+
+#MegaDropDownMenuBlock div:nth-child(odd) {
+    background: #fff;
+}
+
+#MegaDropDownMenuBlock div:nth-child(even) {
+    background: #f3f4f5;
+}
+
+.megaMenuDiv ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    line-height: 26px;
+}
+
+.megaMenuDiv ul li a {
+    font-size: 13px !important;
+    color: #212121 !important;
+    font-weight: 400 !important;
+}
+
+._1h5QLb a {
+    font-weight: bold !important;
+}
+
+#mainMenuBlock ul>li:hover #MegaDropDownMenuBlock {
+    display: flex;
+}
+
+#mainMenuBlock ul li:hover ._3ynUUz {
+    transform: rotate(90deg) !important;
+    -webkit-transform: rotate(90deg);
+
+}
+
+#mainMenuBlock ul li:hover ._3ynUUz path {
+    fill: #2874f0 !important;
+}
+
+/*----dropdown mega menu ends here ------*/
+
+#barsBlock {
+    display: none;
+}
+
+/*-----main menu block css ends here -----*/
+
+
+
+/* Deal of the day block start here*/
+#DealOfDayBlock{
+    background: #fff;
+    width: 75%;
+    height: 400px;
+    margin: 10px;
+}
+
+#timer 
+{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+}
+#timer h2{
+    margin: 0 30px 0 0;
+}
+#timer span img{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+
+}
+#timer button{
+    margin-left: 680px;
+    background: #2874f0;
+    color: #fff;
+    border-radius: 2px;
+    padding: 5px 5px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: box-shadow .2s ease;
+    vertical-align: super;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+    border: 1px solid #e0e0e0;
+}
+.dealofthedayimgBlock{
+    display: flex;
+    width: 85%;
+}
+.dealofthedayimgBlock div{
+    width: 30%;
+    margin-left: 50px;
+}
+.dealofthedayimgBlock div header a img
+{
+padding-top: 30px;
+}
+
+.headphones main h5{
+    
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.speakers main h5{
+    padding: 50px 50px 0 50px;
+    justify-content: center;
+    align-items: center;
+}
+.memeorycards main h5{
+    width: 300px;
+    padding-top: 64px;
+    
+}
+.powerbank main h5{
+    width: 300px;
+    padding-top: 25px;
+    float: left;
+}
+.dealofthedayimgBlock div main h6{
+    color: rgb(56, 142, 60);
+    
+    
+}
+
+
+.headphones main h6{ 
+    padding-top: 0px;
+    line-height: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    width: 175px;
+    font-size: 15px;
+}
+.speakers main h6{
+
+    
+    padding: 35px 30px 10px 32px;
+    width: 175px;
+    font-size: 15px;
+}
+.memeorycards main h6{
+    padding: 35px 30px 10px 32px;
+    width: 175px;
+    font-size: 15px;
+    
+}
+.powerbank main h6{
+    padding: 75px 30px 10px 10px;
+    width: 300px;
+    font-size: 15px;
+}
+.powerbank footer{
+    margin-left: 25px;
+}
+.sideimg img{
+    margin: -50px -95px;
+    width: 261px;
+}
+#beforediscount article{
+    display: flex;
+    width: 100%;
+}
+#beforediscount article div {
+    width: 33.33%;
+   
+}
+#beforediscount article div img{
+    width: 98%;
+    height: 38vh;
+    
+}
+#discountblock article{
+    width: 100%;
+    background: #fff;
+    padding: 15px 0 0 15px;
+
+    
+}
+
+/* #discountblock article div div {
+    
+    
+} */
+.discountblockheader{
+    border-bottom: 1px solid #ccc;
+    
+}
+.discountblockheader button
+{
+    background: #2874f0;
+    margin-left: 1230px;
+    width: 100px;
+    background: #2874f0;
+    color: #fff;
+    border-radius: 2px;
+    padding: 15px 5px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: box-shadow .2s ease;
+    vertical-align: super;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+    border: 1px solid #e0e0e0;
+   
+}
+#discountblock article div div{
+    width: 15%;
+    padding: 35px;
+}
+
+.discountimg 
+{
+    display: flex;
+    width: 100%;
+    
+    
+
+}
+#discountblock article main h5{
+    font-size: 14px;
+
+}
+#discountblock article main h6{
+    
+    color: rgb(56, 142, 60);
+    font-weight: 400;
+    font-size: 14px;
+    
+}
+#discountblock article main{
+    justify-content: center;
+    align-items: center;
+    line-height: 5;
+    margin-left: 14px
+}
+.discountblockheaderimg1 main {
+line-height: 6 !important;
+}
+
+
+
+
+#SixImages article .a{
+    display: flex;
+    /* padding: 15px; */
+    width: 100%;
+    
+}
+#SixImages article .a img{
+    width: 97%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#SixImages article .b{
+    display: flex;
+    /* padding: 15px; */
+    width: 100%;
+    
+}
+#SixImages article .b img{
+    width: 97%;
+    margin-left: 10px;
+}
+.footer div h1{
+    display: block;
+    font-size: 2px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.footer{
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    font-size: 10px;
+    opacity: 0.5;
+}

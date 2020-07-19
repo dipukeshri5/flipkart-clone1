@@ -82,7 +82,7 @@
 }
 
 .CSSgal .bullets>a {
-    display: inline-block;
+    display: inline-blockf;
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -215,4 +215,3 @@
 ._2gp_O1 {
     transform: rotate(180deg) !important;
 }
-© 2020 GitHub, Inc.
